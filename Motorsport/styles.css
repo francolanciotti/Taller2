@@ -1,0 +1,133 @@
+/* Variables y fuentes (se mantienen igual) */
+:root {
+  --black: #0E1319;
+  --white: #ECEFF1;
+  --yellow: #FFF000;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal con Grid */
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  width: 412px;
+  margin: 0 auto;
+  background: var(--black);
+  position: relative;
+}
+
+/* Header - Se mantiene fijo 
+.header-grid {
+  grid-row: 1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 232px;
+  overflow: hidden;
+}*/
+
+.header-grid {
+  width: 100%;
+  grid-row: 1;
+  height: 232px;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  background: linear-gradient(
+    180deg, 
+    #0E1319 50%,
+    rgba(14, 19, 25, 0) 100%
+  );
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  width: 183px;
+  height: 60px;
+  left: 114px;
+  top: 51px;
+  z-index: 10;
+}
+
+/* Main - Área de scroll */
+.main-grid {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 40px;
+}
+
+/* Sección Hero con Grid superpuesto */
+.hero-grid {
+  display: grid;
+  grid-template-areas: 
+    "hero"
+    "title"
+    "subtitle"
+    "button";
+  position: relative;
+  height: 717px;
+}
+
+.hero-img {
+  grid-area: hero;
+  width: 100%;
+  height: 558px;
+  object-fit: cover;
+  position: absolute;
+  top: -130px;
+}
+
+.grid-title {
+  grid-area: title;
+  font-family: 'Formula1';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--white);
+  margin: 378px 0 0 16px; /* Posición exacta */
+  width: 282px;
+  z-index: 2;
+}
+
+.grid-subtitle {
+  grid-area: subtitle;
+  font-family: 'Formula1';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--white);
+  width: 282px;
+  margin: 20px auto 0;
+  z-index: 2;
+}
+
+.grid-cta {
+  grid-area: button;
+  width: 182px;
+  height: 51px;
+  background: var(--yellow);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Ek Mukta';
+  font-weight: 500;
+  font-size: 24px;
+  margin: 40px auto 0;
+  z-index: 3;
+}
+
+.divider-line {
+  width: 380px;
+  height: 1px;
+  background: var(--white);
+  margin: 0 auto;
+}
