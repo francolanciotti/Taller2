@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Ek Mukta', sans-serif;
+  background: #0E1319;
+  color: #ECEFF1;
+  position: relative;
+  width: 412px;
+  min-height: 917px; 
+  overflow-y: auto; 
+}
+
+.header {
+  position: fixed; 
+  width: 412px;
+  height: 232px;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  pointer-events: none;
+}
+
+.header > * {
+  pointer-events: auto;
+}
+
+.header-bg {
+  position: absolute;
+  width: 412px;
+  height: 115px;
+  background: #0E1319;
+  top: 0;
+  left: 0;
+}
+
+.header-gradient {
+  position: absolute;
+  width: 412px;
+  height: 128px;
+  top: 104px;
+  left: 0;
+  background: linear-gradient(180deg, #0E1319 27.4%, rgba(14, 19, 25, 0) 100%);
+}
+
+.logo {
+  position: absolute;
+  width: 183px;
+  height: 60px;
+  top: 51px;
+  left: 114px;
+  z-index: 3;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.sec-1 {
+  position: absolute;
+  width: 412px;
+  height: 717px;
+  top: 104px; 
+  left: 0;
+  z-index: 1;
+}
+
+.sec-1 img {
+  position: absolute;
+  width: 412px;
+  height: 558px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.sec-1-title {
+  position: absolute;
+  width: 282px;
+  height: 114px;
+  left: 16px;
+  top: 378px;
+  font-family: 'Formula1', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #ECEFF1;
+  z-index: 2;
+}
+
+.sec-1-subtitle {
+  position: absolute;
+  width: 282px;
+  height: 85px;
+  left: 65px;
+  top: 545px;
+  font-family: 'Formula1', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 17px;
+  color: #ECEFF1;
+  z-index: 2;
+}
+
+.cta-button {
+  position: absolute;
+  width: 182px;
+  height: 51px;
+  top: 666px;
+  left: 115px;
+  background: #FFF000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.cta-button span {
+  font-family: 'Ek Mukta', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 40px;
+}
+
+.divider-line {
+  position: absolute;
+  width: 380px;
+  top: 881px;
+  left: 16px;
+  margin-top: 232px;
+}
