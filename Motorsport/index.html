@@ -8,33 +8,76 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <img src="graphic/motorsport.jpg" alt="logo" class="logo">
-  </header>
-
-  <main>
-    <div class="sec1-conteiner">
-        <div class="heroimg">      
-          <div class="img-div"></div>
-        </div>
+  <div class="content">
+    <header class="header">
+      <img src="graphic/motorsport.jpg" alt="logo" class="logo">
+    </header>
+    <main>
+      <div class="heroimg">      
+        <div class="img-div"></div>
       </div>
       <section class="seccion1">
-          <h1 class="title">No te pierdas nada<br>con <span class="acento">Motorsport</span></h1>
-          <div class="subtitle-flex">
-            <h3 class="subtitle">Últimas novedades de Franco Colapinto,<br>calendario personalizado,<br>análisis en redes sociales y mucho más.</h3>
-            <div class="cta"><b>Acceder a las novedades</b></div>
-          </div>
-        </section>
-        <hr class="solid">
-        <section class="seccion2">
-          <img src="graphic/Scene 07.png" alt="Newsletter" style="width: 100vh;">
-          <div class="sec2-flex">
-            <h2>Newsletter</h2>
-            <h3>Sé el primero en enterarte de las últimas<br><b>noticias</b> de <b>Franco Colapinto</b> y todas las<br><b>novedades</b> de la Formula 1.</h3>
-          </div>
-        </section>
-    </div>
-  </main>
-     
+            <h1 class="title">No te pierdas nada<br>con <span class="acento">Motorsport</span></h1>
+            <div class="subtitle-flex">
+              <h3 class="subtitle">Últimas novedades de Franco Colapinto,<br>calendario personalizado,<br>análisis en redes sociales y mucho más.</h3>
+              <div class="cta"><b>Acceder a las novedades</b></div>
+            </div>
+      </section>
+      <hr class="solid">
+     <section class="seccion2">
+       <img src="graphic/Scene 07.png" alt="Newsletter" style="width: 100vh;">
+       <div class="sec2-flex">
+         <h2>Newsletter</h2>
+         <h3>Sé el primero en enterarte de las últimas<br><b>noticias</b> de <b>Franco Colapinto</b> y todas las<br><b>novedades</b> de la Formula 1.</h3>
+       </div>
+      </section>
+      <section class="seccion3">
+       <div class="sec3-flex">
+          <h2>Calendario 2025</h2>
+          <h3>No te pierdas ni una carrera. Recibe fechas, horarios<br>y circuitos de Franco Colapinto en tu calendario.<br>Formula 1 fácil y sin complicaciones.</h3>
+       </div>
+       <div class="image-container">
+         <img src="graphic/circuits.png" class="scroll-image" alt="Imagen panorámica">
+       </div>
+       <script src="script.js"></script>
+      </section>
+      <section class="seccion4">
+       <div class="sec4-flex">
+         <h2>Analisis</h2>
+         <h3>Entiende cada carrera en minutos.<br>Datos técnicos y estrategias,<br>ideal para fans apasionados.</h3>
+       </div>
+        <div class="video-background">
+          <video autoplay muted loop   style="width: 90vh;">
+            <source src="graphic/Analisis.mp4" type="video/mp4">
+          </video>
+        </div>
+     </section>
+     <div class="endimg">
+        <div class="img-div2"></div>
+     </div>
+     <hr class="solid">
+     <section class="seccion5">
+        <h3 style="border-bottom: 1vh solid var(--yellow); padding-bottom: 1vw;"><b>Suscríbete</b> ahora<br>y recibí todo<br>este contenido<br>ya mismo en tu correo.</h3>
+       <form>
+          <label for="nombre">Nombre:</label>
+         <input type="text" name="nombre" id="nombre" placeholder="Alberto" required>
+         <br>
+         <br>
+         <label for="email">E-Mail:</label>
+         <input type="email" name="email" id="email" placeholder="alberto@mail.com" required>
+         <br>
+         <br>
+         <label for="date">Edad:</label>
+         <input type="date" name="date" id="date" required>
+         <br>
+         <br>
+         <br>
+         <input type="submit">
+       </form>
+      </section>
+  </div>
+      <footer>
+      </footer>
+    </main> 
 </body>
 </html>
